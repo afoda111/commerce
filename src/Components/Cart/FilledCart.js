@@ -7,9 +7,9 @@ function FilledCart({cart, emptyCart, removeFromCart, updateCart}) {
     const style = useStyle();
     return (
         <div>
-            <Grid container spacing={3}>
+            <Grid container spacing={3} xs={12} >
                 {cart.line_items.map((item)=>(
-                    <Grid item xs={12} sm={4} key={item.id}>
+                    <Grid item xs={12} sm={6} lg={4}  key={item.id}>
                         <CartItem cart={item} 
                         emptyCart={emptyCart} 
                         removeFromCart={removeFromCart} 

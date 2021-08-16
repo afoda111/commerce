@@ -42,11 +42,10 @@ function App() {
   }
 
   useEffect(()=>{
+    getProducts();
     getCart();
   },[])
-  useEffect(()=>{
-    getProducts();
-  },[products])
+ 
   return (
     <Router>
       <div>

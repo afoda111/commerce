@@ -5,7 +5,13 @@ export default makeStyles((theme) => ({
   title: {
     marginTop: '8%',
     textAlign:'center',
-    marginBottom: '3%'
+    marginBottom: '3%',
+    [theme.breakpoints.up('xs')]: {
+      marginTop : '60px'
+    },
+    [theme.breakpoints.up('lg')]: {
+      marginTop : '8%'
+    }
   },
   emptyButton: {
     minWidth: '150px',
